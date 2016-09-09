@@ -16,6 +16,21 @@ div#tableContainer{
 div#tableRow{
     display: table-row;
 }
+#award{
+/*    绝对定位*/
+    position: absolute;
+    top: 30px;
+    left: 365px;
+}
+#coupon{
+/*    固定位置，拖动也不会改变*/
+    position: fixed;
+    top: 300px;
+    left: 100px;
+}
+#coupon a,img{
+    border: none;
+}
 #headerSlogan{
     float: right;
 }
