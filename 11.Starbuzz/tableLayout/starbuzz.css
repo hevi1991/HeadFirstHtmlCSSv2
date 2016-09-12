@@ -23,13 +23,14 @@ div#tableRow{
     left: 365px;
 }
 #coupon{
-/*    固定位置，拖动也不会改变*/
-    position: fixed;
-    top: 300px;
-    left: 100px;
+/*    relative：相对定位，基于父视图，流排布，可以设定相对位置*/
+/*    fixed：固定定位，基于俯视图的定位，会一直固定在屏幕指定的位置上，就算滚动也不改变 */
+    position: relative;
+    left: -90px;
 }
 #coupon a,img{
     border: none;
+    
 }
 #headerSlogan{
     float: right;
@@ -47,7 +48,6 @@ div#tableRow{
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
-    width: 20%;
     vertical-align: top;
 }
 #drinks{

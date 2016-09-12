@@ -1,0 +1,74 @@
+@font-face {
+	font-family: "Emblema One";
+	src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"), url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf"); 
+}
+body {
+  font-family:     Verdana, Geneva, Arial, sans-serif;
+  font-size:       small;
+}
+h1, h2 {
+  color:           #cc6600;
+  border-bottom:   thin dotted #888888;
+}
+h1 {
+  font-family:     "Emblema One", sans-serif;
+  font-size:       220%;
+}
+h2 {
+  font-size:       130%;
+  font-weight:     normal;
+}
+blockquote {
+  font-style:      italic;
+}
+table{
+    margin-left: 20px;
+    margin-right: 20px;
+    border: thin solid black;
+    caption-side: bottom;
+/*    border-spacing，可以设置水平间距和垂直间距*/
+/*    border-spacing: 垂直 水平;*/
+    
+/*    border-collapse: collapse 可以设置无间距*/
+    border-collapse: collapse;
+    
+}
+td,th{
+    border: thin solid gray;
+    padding: 2px;
+}
+th{
+    background-color: #cc6600;
+}
+td.textCenter{
+    text-align: center;
+}
+td.textRight{
+    text-align: right;
+}
+caption{
+    font-style: italic;
+    padding-top: 8px;
+}
+/*
+使用伪类替代(nth-child(条件))
+tr.cellColor{
+    background-color: #fcba7a;
+}
+*/
+
+/* 2n+1,即位行数*/
+/*odd 偶数，even奇数*/
+tr:nth-child(odd){
+    background-color: #fcba7a;
+}
+td:nth-child(2),td:nth-child(3),td:nth-child(6){
+    text-align: center;
+}
+
+td:nth-child(4),td:nth-child(5){
+    text-align: right;
+}
+table table th{
+    background-color: white;
+}
