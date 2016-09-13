@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Starbuzz Bean Machine</title>
+    <link href="starbuzz.css" type="text/css" rel="stylesheet">
+    <link href="starbuzzform.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out the form below and click submit to order</h2>
+
+    <form action="http://starbuzzcoffee.com/processorder.php" method="post">
+        <div class="tableRow">
+            <p>
+                Choose your beans:
+            </p>
+            <p>
+                <select name="beans" required>
+                    <option value="House blend">House blend</option>
+                    <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+                    <option value="Guatemala">Origanic Guatemala</option>
+                    <option value="Kenya">Kenya</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="tableRow">
+            <p>Type:</p>
+            <p>
+                <input type="radio" name="beantype" value="whole" id="Whole">
+                <label for="Whole">Whole bean</label>
+                <br>
+                <input type="radio" name="beantype" value="ground" checked id="ground">
+                <label for="ground">Ground</label>
+            </p>
+        </div>
+
+        <div class="tableRow">
+            <p>
+                Extras:</p>
+            <p>
+                <input type="checkbox" name="extras[]" value="giftwrap">Gift wrap
+                <br>
+                <input type="checkbox" name="extras[]" value="catalog" checked>Include catalog with order
+            </p>
+        </div>
+
+        <div class="tableRow">
+            <p>
+                Number of bags:
+            </p>
+            <p>
+                <input type="number" max="10" min="1" name="bags" value="1">
+                <br>
+            </p>
+        </div>
+        <div class="tableRow">
+            <p>
+                Must arrive by date:
+            </p>
+            <p>
+                <input type="date" name="date" required>
+            </p>
+
+        </div>
+        <div class="tableRow">
+            <p class="heading">
+                Ship to
+            </p>
+        </div>
+
+        <div class="tableRow">
+            <p>
+                Name:
+            </p>
+            <p>
+                <input type="text" name="name" required placeholder="input your full name">
+            </p>
+
+        </div>
+
+
+
+
+        <div class="tableRow">
+            <p>
+                Address:
+            </p>
+            <p>
+                <input type="text" name="address" required placeholder="input your address">
+            </p>
+
+        </div>
+
+        <div class="tableRow">
+            <p>
+                City:
+            </p>
+            <p>
+                <input type="text" name="city" required placeholder="your location city">
+            </p>
+
+        </div>
+
+        <div class="tableRow">
+            <p>
+                State:
+            </p>
+            <p>
+                <input type="text" name="state" required placeholder="your loacation state">
+            </p>
+
+        </div>
+
+        <div class="tableRow">
+            <p>
+                Zip:
+            </p>
+            <p>
+                <input type="text" name="zip" required placeholder="input zip">
+            </p>
+
+        </div>
+
+        <div class="tableRow">
+            <p>
+                Phone:
+            </p>
+            <p>
+                <input type="tel" name="phone" required placeholder="your phone number">
+            </p>
+
+        </div>
+
+        <div class="tableRow">
+            <p>
+                Customer Comments:
+            </p>
+            <p>
+                <textarea name="comments"></textarea>
+            </p>
+
+        </div>
+
+        <div class="tableRow">
+            <p></p>
+            <p>
+                <input type="submit" value="Order now">
+            </p>
+        </div>
+
+    </form>
+
+
+
+</body>
+
+</html>
